@@ -1,6 +1,7 @@
-$(document).ready(function(){
-    $('#carouselExampleFade').carousel({
-      interval: 3000, // Cambia este valor para ajustar la velocidad de las transiciones (en milisegundos)
+document.addEventListener('DOMContentLoaded', function () {
+    var myCarousel = document.querySelector('#carouselviajes');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 3000,
       ride: 'carousel'
     });
   });
