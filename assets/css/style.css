@@ -1,50 +1,90 @@
-.logo-image {
-  width: 30px;
-  height: auto;
-}
-
-.raleway {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.navbar-custom {
-  background-color: transparent;
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-}
-
-.navbar-custom .navbar-brand {
-  color: rgb(64, 62, 62);
-}
-
-.navbar-custom .navbar-nav .nav-link {
-  color: rgb(118, 118, 118);
-}
-
-.navbar-custom .navbar-nav .nav-link:hover,
-.navbar-custom .navbar-nav .nav-link.active {
-  color: #ff0095;
-}
-
-.carousel-item img {
-  height: 100vh;
-  object-fit: cover;
-}
-
-#quienes-somos {
-  background-color: #000;
-  padding: 50px 0;
-  text-align: center;
-}
-
-#quienes-somos h2 {
-  color: white;
-} 
-
-.card .card-header i {
-    font-size: 2rem; 
+/* General styles */
+body {
+    font-family: 'Raleway', sans-serif;
   }
+  
+  /* Logo image */
+  .logo-image {
+    width: 30px;
+    height: auto;
+  }
+  
+  /* Navbar styles */
+  .navbar-custom {
+    background-color: #06ddf9;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .navbar-custom .navbar-brand {
+    color: rgb(64, 62, 62);
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    color: rgb(118, 118, 118);
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover,
+  .navbar-custom .navbar-nav .nav-link.active {
+    color: #ff0095;
+  }
+  
+  /* Carousel styles */
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  /* Section styles */
+  #quienes-somos, #destacados, #contacto {
+    background-color: #000;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #quienes-somos h2, #destacados h2, #contacto h2 {
+    color: white;
+  }
+  
+  /* Card styles */
+  .card .card-header i {
+    font-size: 2rem;
+  }
+  
+  /* Tooltip styles */
+  .tooltip-inner {
+    background-color: hotpink;
+  }
+  
+  .tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow::before,
+  .tooltip.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: hotpink;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #06ddf9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  footer p {
+    color: white;
+    margin-right: 20px;
+  }
+  
+  footer .social-icons {
+    color: white;
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  
+  footer .social-icons i {
+    font-size: 24px;
+  }
+  
